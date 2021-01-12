@@ -4,7 +4,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Stellar Admin</title>
+    <title>eCloth Admin</title>
     <!-- plugins:css -->
     <link rel="stylesheet" href="vendors/simple-line-icons/css/simple-line-icons.css">
     <link rel="stylesheet" href="vendors/flag-icon-css/css/flag-icon.min.css">
@@ -18,6 +18,7 @@
     <!-- endinject -->
     <!-- Layout styles -->
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- End layout styles -->
     <link rel="shortcut icon" href="https://www.pngitem.com/pimgs/m/128-1280822_check-mark-box-clip-art-blue-admin-icon.png" />
   </head>
@@ -71,6 +72,12 @@
               </a>
             </li>
             <li class="nav-item">
+                <a class="nav-link" href="pages/icons/simple-line-icons.html">
+                  <span class="menu-title">Product Category</span>
+                  <i class="icon-list menu-icon"></i>
+                </a>
+              </li>
+            <li class="nav-item">
               <a class="nav-link" href="pages/icons/simple-line-icons.html">
                 <span class="menu-title">Add Brand</span>
                 <i class="icon-badge menu-icon"></i>
@@ -102,92 +109,53 @@
         <div class="main-panel">
           <div class="content-wrapper">
            
-           
-            <!-- Quick Action Toolbar Starts-->
-            <div class="row quick-action-toolbar">
-              <div class="col-md-12 grid-margin">
-                <div class="card">
-                  <div class="card-header d-block d-md-flex">
-                    <h5 class="mb-0">Quick Actions</h5>
-                    <p class="ml-auto mb-0">How are your active users trending overtime?<i class="icon-bulb"></i></p>
-                  </div>
-                  <div class="d-md-flex row m-0 quick-action-btns" role="group" aria-label="Quick action buttons">
-                    <div class="col-sm-6 col-md-3 p-3 text-center btn-wrapper">
-                      <button type="button" class="btn px-0"> <i class="icon-list mr-2"></i> Add Category</button>
-                    </div>
-                    <div class="col-sm-6 col-md-3 p-3 text-center btn-wrapper">
-                      <button type="button" class="btn px-0"><i class="icon-badge mr-2"></i> Add Brand</button>
-                    </div>
-                    <div class="col-sm-6 col-md-3 p-3 text-center btn-wrapper">
-                      <button type="button" class="btn px-0"><i class="icon-bag mr-2"></i> Add Product</button>
-                    </div>
-                    <div class="col-sm-6 col-md-3 p-3 text-center btn-wrapper">
-                      <button type="button" class="btn px-0"><i class="icon-user mr-2"></i>Users</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- Quick Action Toolbar Ends-->
-            <div class="row">
-              <div class="col-md-12 grid-margin">
-                <div class="card">
-                  <div class="card-body">
-                    <div class="row">
-                      <div class="col-md-12">
-                        <div class="d-sm-flex align-items-baseline report-summary-header">
-                          <h5 class="font-weight-semibold">Report Summary</h5> <span class="ml-auto">Updated Report</span> <button class="btn btn-icons border-0 p-2"><i class="icon-refresh"></i></button>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="row report-inner-cards-wrapper">
-                      <div class=" col-md-6 col-xl report-inner-card">
-                        <div class="inner-card-text" style="margin-top: -10px;">
-                          <span class="report-title"><b>Total Category</b></span>
-                          <h4 class=""> 23</h4><br>
-                          <!-- <span class="report-count"> 2 Reports</span> -->
-                        </div>
-                        <div class="inner-card-icon bg-success">
-                          <i class="icon-list"></i>
-                        </div>
-                      </div>
-                      <div class="col-md-6 col-xl report-inner-card">
-                        <div class="inner-card-text">
-                          <span class="report-title"><b>Total Brands</b></span>
-                          <h4>5</h4><br>
-                         
-                        </div>
-                        <div class="inner-card-icon bg-danger">
-                          <i class="icon-badge"></i>
-                        </div>
-                      </div>
-                      <div class="col-md-6 col-xl report-inner-card">
-                        <div class="inner-card-text">
-                          <span class="report-title"><b>Total Products</b></span>
-                          <h4>50</h4><br>
-                          
-                        </div>
-                        <div class="inner-card-icon bg-warning">
-                          <i class="icon-bag"></i>
-                        </div>
-                      </div>
-                     
-                      <div class="col-md-6 col-xl report-inner-card">
-                        <div class="inner-card-text">
-                          <span class="report-title"><b>Total Users</b></span>
-                          <h4>10</h4><br>
-                         
-                        </div>
-                        <div class="inner-card-icon bg-dark">
-                          <i class="icon-user-following"></i>
-                        </div>
-                      </div>
-  
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+           <!---Add Category--->
+           <h2>Our Category</h2><hr>
+           <div class="tbl-wrapper card table-responsive">
+               <div class="card-body">
+                   <a href="#" class="btn btn-success float-right mb-1">Add New Category  <i class="fa fa-plus"></i></a>
+                <table class="table table-bordered">
+                    <thead class="bg-dark">
+                        <tr>
+                            <th class="text-white">ID</th>
+                            <th class="text-white">Category</th>
+                            <th class="text-white">Discription</th>
+                            <th class="text-white">Created Date</th>
+                            <th class="text-white">Updated Date</th>
+                            <th class="text-white">Action</th>
+ 
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Men</td>
+                            <td>This is Men category</td>
+                            <td>12/10/2021</td>
+                            <td>12/10/2021</td>
+                            <td>
+                             <a href="" class="btn btn-sm btn-warning"><i class="icon-note"></i></a>
+                             <a href="" class="btn btn-sm btn-success"><i class="icon-check "></i></a>
+                             <a href="" class="btn btn-sm btn-danger"><i class="icon-trash"></i></a>
+                         </td>
+                        </tr>
+                        <tr>
+                         <td>2</td>
+                         <td>Women</td>
+                         <td>This is Men category</td>
+                         <td>12/10/2021</td>
+                         <td>12/10/2021</td>
+                         <td>
+                             <a href="" class="btn btn-sm btn-warning"><i class="icon-note"></i></a>
+                             <a href="" class="btn btn-sm btn-success"><i class="icon-check "></i></a>
+                             <a href="" class="btn btn-sm btn-danger"><i class="icon-trash"></i></a>
+                         </td>
+                     </tr>
+                    </tbody>
+                </table>
+               </div>
+               
+           </div>
             
           </div>
           <!-- content-wrapper ends -->
